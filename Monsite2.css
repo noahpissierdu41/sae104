@@ -1,79 +1,78 @@
 
-body, h1, h2, p, ul, ol, li {
-    margin: 0;
-    padding: 0;
-}
 
+
+/* corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    text-align: center; /* Alignement du texte au centre */
+    background-color: #f4f4f4; 
+    
 }
 
+/* en-tête de la page */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #333; 
+    color: white; 
+    padding: 20px; /* Espacement intérieur */
 }
 
+/*  titres (h1) */
 h1 {
-    margin: 0;
-    font-size: 2em; /* Ajustez la taille de la police selon vos préférences */
+    
+    font-size: 2em; /* Taille de police */
 }
 
+ 
 section {
-    padding: 300px;
-    background : url('./fond.jpg');
-    background-size: cover;
+    padding: 300px; /* Espacement intérieur de la section */
+    
 }
+
+
 h4 {
-    margin: 0;
-    font-size: 3em; /* Ajustez la taille de la police selon vos préférences */
+   
+    font-size: 3em; /* Taille de police */
 }
 
-
+/* Styles pour le pied de page de la page */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; /* Espacement intérieur du pied de page */
+    position: fixed; /* Position fixe en bas de la page */
+    width: 100%; /* Largeur pleine de l'écran */
 }
 
+/* Styles pour les liens dans le pied de page */
 footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Pas de soulignement par défaut */
+    margin: 0 10px; /* Marge autour des liens */
+    font-weight: bold; /* Police en gras */
 }
+
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement lorsque survolé */
 }
 
-
-
-
+/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
 @media screen and (max-width:680px){
     nav .onglets {
-        margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Espacement en bas pour les onglets de navigation */
     }
     .main .card {
-        margin: 10px;
+        margin: 10px; /* Espacement autour des cartes principales */
     }
     .main .content .card .right img{
-        height:200px;
-        width: 100%;
-        margin-top: -0px;
+        height:200px; /* Taille de l'image dans les cartes */
+        width: 100%; /* Largeur pleine dans les cartes */
+      
     }
     .main .content .card{
-        display: block;
+        display: block; /* Affichage des cartes en tant que blocs */
     }
     footer{
-        padding: 30px;
+        padding: 30px; /* Ajustement de l'espacement intérieur du pied de page */
     }
 }
