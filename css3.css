@@ -1,67 +1,93 @@
+/* Styles de base pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    text-align: center; /* Alignement du texte au centre */
+    background-color: #f4f4f4; /* Couleur de fond de la page */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du rembourrage par défaut */
 }
+
+/* Styles pour l'en-tête de la page */
 header {
-    background-color: #D8BFD8; /* Violet clair */
-    color: #000;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    padding: 20px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Alignement du texte au centre */
 }
+
+/* Styles pour la section principale de la page */
 section {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 20px auto;
+    display: flex; /* Utilisation du modèle de boîte flexible */
+    justify-content: space-around; /* Alignement des éléments de manière uniforme autour de l'espace disponible */
+    max-width: 1200px; /* Largeur maximale de la section */
+    margin: 20px auto; /* Marge extérieure automatique (centrage horizontal) */
 }
 
+/* Styles pour le contenu dans la section */
 .content {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
+    flex: 1; /* Expansion du contenu pour occuper l'espace disponible */
+    text-align: left; /* Alignement du texte à gauche */
+    padding: 20px; /* Espacement intérieur du contenu */
 }
 
+/* Styles pour les images */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%; /* Image responsive, adaptée à la largeur du conteneur parent */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    border-radius: 8px; /* Bordure arrondie pour les images */
 }
 
+/* Styles pour les titres de niveau 2 */
 h2 {
-    color: #333;
+    color: #333; /* Couleur du texte pour les titres de niveau 2 */
 }
 
+/* Styles pour les paragraphes */
 p {
-    color: #666;
+    color: #666; /* Couleur du texte pour les paragraphes */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
+/* Styles pour le pied de page */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px; /* Espacement intérieur du pied de page */
+    position: fixed; /* Position fixe en bas de la page */
+    bottom: 0; /* Alignement en bas de la page */
+    width: 100%; /* Largeur pleine de l'écran */
 }
 
+/* Styles pour les liens dans le pied de page */
 footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    color: #fff; /* Couleur du texte des liens du pied de page */
+    text-decoration: none; /* Pas de soulignement par défaut pour les liens du pied de page */
+    margin: 0 10px; /* Marge autour des liens du pied de page */
+    font-weight: bold; /* Gras pour les liens du pied de page */
 }
 
+/* Styles pour les liens au survol */
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement des liens au survol */
+}
+
+/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
+        margin-bottom: 20px; /* Espacement en bas pour les onglets de navigation */
+    }
+    .main .card {
+        margin: 10px; /* Espacement autour des cartes principales */
+    }
+    .main .content .card .right img{
+        height:200px; /* Taille de l'image dans les cartes */
+        width: 100%; /* Largeur pleine dans les cartes */
+        margin-top: -0px; /* Ajustement de la marge supérieure */
+    }
+    .main .content .card{
+        display: block; /* Affichage des cartes en tant que blocs */
+    }
+    footer{
+        padding: 30px; /* Ajustement de l'espacement intérieur du pied de page */
+    }
 }
