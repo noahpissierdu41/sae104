@@ -1,74 +1,109 @@
+/* Styles de base pour le corps de la page */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Police de caractères par défaut */
+    background-color: #f5f5f5; /* Couleur de fond de la page */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du rembourrage par défaut */
+    color: #333; /* Couleur du texte principal */
 }
 
+/* Styles pour l'en-tête de la page */
 header {
-    background-color: #333; /* Violet clair */
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    padding: 20px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Alignement du texte au centre */
 }
 
+/* Styles pour la section principale de la page */
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    
+    max-width: 800px; /* Largeur maximale de la section */
+    margin: 20px auto; /* Marge extérieure automatique (centrage horizontal) */
+    padding: 20px; /* Espacement intérieur de la section */
+    background-color: #fff; /* Couleur de fond de la section */
 }
+
+
 section a i {
-    color: blue;
+    color: blue; 
 }
 
+/* Styles pour les images */
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    max-width: 100%; /* Image responsive, adaptée à la largeur du conteneur parent */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    border-radius: 50%; /* Bordure arrondie pour les images */
+    margin-bottom: 20px; /* Marge en bas des images */
 }
 
+/* Styles pour les titres de niveau 2 */
 h2 {
-    color: #3498db; /* Violet clair */
+    color: #3498db; /* Couleur du texte pour les titres de niveau 2 */
 }
 
+/* Styles pour les paragraphes */
 p {
-    line-height: 1.6;
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
 }
 
+/* Styles pour les listes non ordonnées */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Suppression des puces des listes non ordonnées */
+    padding: 0; /* Suppression du rembourrage par défaut des listes */
 }
 
+/* Styles pour les éléments de liste */
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Marge en bas des éléments de liste */
 }
 
+/* Styles pour les liens */
 a {
-    color: #3498db; /* Violet clair */
-    text-decoration: none;
+    color: #3498db; /* Couleur du texte pour les liens */
+    text-decoration: none; /* Pas de soulignement par défaut pour les liens */
 }
 
+/* Styles pour les liens au survol */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement des liens au survol */
 }
 
+/* Styles pour le pied de page */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px; /* Espacement intérieur du pied de page */
+    text-align: center; /* Alignement du texte au centre */
+    position: fixed; /* Position fixe en bas de la page */
+    bottom: 0; /* Alignement en bas de la page */
+    width: 100%; /* Largeur pleine de l'écran */
 }
 
+/* Styles pour les liens dans le pied de page */
 footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+    color: #fff; /* Couleur du texte des liens du pied de page */
+    text-decoration: none; /* Pas de soulignement par défaut pour les liens du pied de page */
+    margin: 0 10px; /* Marge autour des liens du pied de page */
+}
+
+/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
+        margin-bottom: 20px; /* Espacement en bas pour les onglets de navigation */
+    }
+    .main .card {
+        margin: 10px; /* Espacement autour des cartes principales */
+    }
+    .main .content .card .right img{
+        height:200px; /* Taille de l'image dans les cartes */
+        width: 100%; /* Largeur pleine dans les cartes */
+        margin-top: -0px; /* Ajustement de la marge supérieure */
+    }
+    .main .content .card{
+        display: block; /* Affichage des cartes en tant que blocs */
+    }
+    footer{
+        padding: 30px; /* Ajustement de l'espacement intérieur du pied de page */
+    }
 }
