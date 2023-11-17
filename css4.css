@@ -2,50 +2,51 @@
 body {
     font-family: Arial, sans-serif; /* Police de caractères par défaut */
     text-align: center; /* Alignement du texte au centre */
-    background-color: white; 
-   
+    background-color: white; /* Couleur de fond noire */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du rembourrage par défaut */
 }
 
-
+/* Styles pour l'en-tête de la page */
 header {
-    background-color: #333; 
-    color: #000; 
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: #000; /* Couleur du texte de l'en-tête */
     padding: 20px; /* Espacement intérieur de l'en-tête */
     text-align: center; /* Alignement du texte au centre */
 }
 
-
+/* Styles pour la section principale de la page */
 section {
     max-width: 800px; /* Largeur maximale de la section */
     margin: 20px auto; /* Marge extérieure automatique (centrage horizontal) */
-    background-color: #fff; 
+    background-color: #fff; /* Couleur de fond de la section */
     padding: 20px; /* Espacement intérieur de la section */
     border-radius: 8px; /* Bordure arrondie pour la section */
     text-align: left; /* Alignement du texte à gauche */
 }
 
-
+/* Styles pour le titre de niveau 1 */
 h1 {
-    color: white; 
+    color: white; /* Couleur du texte pour le titre de niveau 1 */
 }
 
-
+/* Styles pour le titre de niveau 2 */
 h2 {
-    color: #000; 
+    color: #000; /* Couleur du texte pour le titre de niveau 2 */
 }
 
 /* Styles pour les paragraphes */
 p {
-    color: #000; 
+    color: #000; /* Couleur du texte pour les paragraphes */
 }
 
-
+/* Styles pour le pied de page */
 footer {
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
     padding: 20px; /* Espacement intérieur du pied de page */
     position: fixed; /* Position fixe en bas de la page */
-   
+    bottom: 0; /* Alignement en bas de la page */
     width: 100%; /* Largeur pleine de l'écran */
 }
 
