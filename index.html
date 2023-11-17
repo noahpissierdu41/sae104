@@ -1,85 +1,33 @@
-/* Réinitialisation des marges et des rembourrages pour certains éléments HTML de base */
-body, h1, h2, p, ul, ol, li {
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Déclaration du type de document et spécification de la langue (anglais) -->
+    <meta charset="UTF-8"> <!-- Définition du jeu de caractères utilisé -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue pour les appareils mobiles -->
+    <link rel="stylesheet" href="monsitee.css"> <!-- Lien vers la feuille de style externe "Monsite2.css" -->
+    <title>My Home Page</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <style>
+        /* Styles CSS spécifiques à cette page (éventuellement ajoutés ici) */
+    </style>
+</head>
+<body>
 
-/* Styles de base pour le corps de la page */
-body {
-    font-family: Arial, sans-serif; /* Police de caractères par défaut */
-    text-align: center; /* Alignement du texte au centre */
-    background-color: #f4f4f4; /* Couleur de fond */
-    margin: 0;
-    padding: 0;
-}
+    <header>
+        <h1>My Home Page</h1> <!-- En-tête de la page avec un titre principal -->
+    </header>
 
-/* Styles pour l'en-tête de la page */
-header {
-    background-color: #333; /* Couleur de fond de l'en-tête */
-    color: white; /* Couleur du texte */
-    padding: 20px; /* Espacement intérieur */
-}
+    <section>
+        <h4>My website</h4> <!-- Section avec un sous-titre -->
+        <!-- Vous pouvez ajouter ici d'autres éléments pour présenter votre site -->
+    </section>
 
-/* Styles pour les titres de niveau 1 (h1) */
-h1 {
-    margin: 0;
-    font-size: 2em; /* Taille de police pour h1 */
-}
+    <footer>
+        <!-- Pied de page contenant des liens vers d'autres pages -->
+        <a href="1pages.html">Identity record </a>
+        <a href="2pages.html">Activity </a>
+        <a href="3pages.html">Professional project</a>
+        <a href="4pages.html">Links</a>
+    </footer>
 
-/* Styles pour la section principale de la page */
-section {
-    padding: 300px; /* Espacement intérieur de la section */
-    background : url('./fond.jpg'); /* Image de fond */
-    background-size: cover; /* Ajustement de la taille de l'image de fond pour couvrir la section */
-}
-
-/* Styles pour les sous-titres de niveau 4 (h4) */
-h4 {
-    margin: 0;
-    font-size: 3em; /* Taille de police pour h4 */
-}
-
-/* Styles pour le pied de page de la page */
-footer {
-    background-color: #333; /* Couleur de fond du pied de page */
-    color: #fff; /* Couleur du texte */
-    padding: 20px; /* Espacement intérieur du pied de page */
-    position: fixed; /* Position fixe en bas de la page */
-    bottom: 0; /* Alignement en bas de la page */
-    width: 100%; /* Largeur pleine de l'écran */
-}
-
-/* Styles pour les liens dans le pied de page */
-footer a {
-    color: #fff; /* Couleur du texte des liens */
-    text-decoration: none; /* Pas de soulignement par défaut */
-    margin: 0 10px; /* Marge autour des liens */
-    font-weight: bold; /* Police en gras */
-}
-
-/* Styles pour les liens du pied de page lorsqu'ils sont survolés */
-footer a:hover {
-    text-decoration: underline; /* Soulignement lorsque survolé */
-}
-
-/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
-@media screen and (max-width:680px){
-    nav .onglets {
-        margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
-        margin-bottom: 20px; /* Espacement en bas pour les onglets de navigation */
-    }
-    .main .card {
-        margin: 10px; /* Espacement autour des cartes principales */
-    }
-    .main .content .card .right img{
-        height:200px; /* Taille de l'image dans les cartes */
-        width: 100%; /* Largeur pleine dans les cartes */
-        margin-top: -0px; /* Ajustement de la marge supérieure */
-    }
-    .main .content .card{
-        display: block; /* Affichage des cartes en tant que blocs */
-    }
-    footer{
-        padding: 30px; /* Ajustement de l'espacement intérieur du pied de page */
-    }
-}
+</body>
+</html>
