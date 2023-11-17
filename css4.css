@@ -1,60 +1,85 @@
+/* Styles de base pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    text-align: center; /* Alignement du texte au centre */
+    background-color: white; 
+   
 }
+
 
 header {
-    background-color: #D8BFD8; /* Violet clair */
-    color: #000;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; 
+    color: #000; 
+    padding: 20px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Alignement du texte au centre */
 }
+
 
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    max-width: 800px; /* Largeur maximale de la section */
+    margin: 20px auto; /* Marge extérieure automatique (centrage horizontal) */
+    background-color: #fff; 
+    padding: 20px; /* Espacement intérieur de la section */
+    border-radius: 8px; /* Bordure arrondie pour la section */
+    text-align: left; /* Alignement du texte à gauche */
 }
 
-h1, h2 {
-    color: #333;
+
+h1 {
+    color: white; 
 }
 
+
+h2 {
+    color: #000; 
+}
+
+/* Styles pour les paragraphes */
 p {
-    color: #666;
+    color: #000; 
 }
 
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; /* Espacement intérieur du pied de page */
+    position: fixed; /* Position fixe en bas de la page */
+   
+    width: 100%; /* Largeur pleine de l'écran */
 }
 
+/* Styles pour les liens dans le pied de page */
 footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    color: #fff; /* Couleur du texte des liens du pied de page */
+    text-decoration: none; /* Pas de soulignement par défaut pour les liens du pied de page */
+    margin: 0 10px; /* Marge autour des liens du pied de page */
+    font-weight: bold; /* Gras pour les liens du pied de page */
 }
 
+/* Styles pour les liens au survol */
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement des liens au survol */
+}
+
+/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
+        margin-bottom: 20px; /* Espacement en bas pour les onglets de navigation */
+    }
+    .main .card {
+        margin: 10px; /* Espacement autour des cartes principales */
+    }
+    .main .content .card .right img{
+        height:200px; /* Taille de l'image dans les cartes */
+        width: 100%; /* Largeur pleine dans les cartes */
+        margin-top: -0px; /* Ajustement de la marge supérieure */
+    }
+    .main .content .card{
+        display: block; /* Affichage des cartes en tant que blocs */
+    }
+    footer{
+        padding: 30px; /* Ajustement de l'espacement intérieur du pied de page */
+    }
 }
