@@ -1,68 +1,66 @@
-/* Réinitialisation des marges et des rembourrages pour certains éléments HTML de base */
+
 body, h1, h2, p, ul, ol, li {
     margin: 0;
     padding: 0;
 }
 
-/* Styles de base pour le corps de la page */
+
 body {
     font-family: Arial, sans-serif; /* Police de caractères par défaut */
     text-align: center; /* Alignement du texte au centre */
-    background-color: #f4f4f4; /* Couleur de fond */
+    background-color: #f4f4f4; 
     margin: 0;
     padding: 0;
 }
 
-/* Styles pour l'en-tête de la page */
+
 header {
     background-color: #333; /* Couleur de fond de l'en-tête */
     color: white; /* Couleur du texte */
     padding: 20px; /* Espacement intérieur */
 }
 
-/* Styles pour les titres de niveau 1 (h1) */
+
 h1 {
     margin: 0;
-    font-size: 2em; /* Taille de police pour h1 */
+    font-size: 2em; /* Taille de police  */
 }
 
-/* Styles pour la section principale de la page */
+
 section {
     padding: 300px; /* Espacement intérieur de la section */
-    background : url('./fond.jpg'); /* Image de fond */
+    
     background-size: cover; /* Ajustement de la taille de l'image de fond pour couvrir la section */
 }
 
-/* Styles pour les sous-titres de niveau 4 (h4) */
 h4 {
     margin: 0;
-    font-size: 3em; /* Taille de police pour h4 */
+    font-size: 3em; 
 }
 
-/* Styles pour le pied de page de la page */
+
 footer {
-    background-color: #333; /* Couleur de fond du pied de page */
-    color: #fff; /* Couleur du texte */
+    background-color: #333; 
+    color: #fff; 
     padding: 20px; /* Espacement intérieur du pied de page */
     position: fixed; /* Position fixe en bas de la page */
     bottom: 0; /* Alignement en bas de la page */
     width: 100%; /* Largeur pleine de l'écran */
 }
 
-/* Styles pour les liens dans le pied de page */
+
 footer a {
-    color: #fff; /* Couleur du texte des liens */
+    color: #fff; 
     text-decoration: none; /* Pas de soulignement par défaut */
     margin: 0 10px; /* Marge autour des liens */
-    font-weight: bold; /* Police en gras */
+    font-weight: bold; 
 }
 
-/* Styles pour les liens du pied de page lorsqu'ils sont survolés */
 footer a:hover {
-    text-decoration: underline; /* Soulignement lorsque survolé */
+    text-decoration: underline; 
 }
 
-/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
+
 @media screen and (max-width:680px){
     nav .onglets {
         margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
