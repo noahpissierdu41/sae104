@@ -1,26 +1,26 @@
-/* Styles de base pour le corps de la page */
+
 body {
-    font-family: 'Arial', sans-serif; /* Police de caractères par défaut */
-    background-color: #f5f5f5; /* Couleur de fond de la page */
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5f5; 
     margin: 0; /* Suppression de la marge par défaut */
     padding: 0; /* Suppression du rembourrage par défaut */
-    color: #333; /* Couleur du texte principal */
+    color: #333; 
 }
 
-/* Styles pour l'en-tête de la page */
+
 header {
-    background-color: #333; /* Couleur de fond de l'en-tête */
-    color: white; /* Couleur du texte de l'en-tête */
+    background-color: #333; 
+    color: white; 
     padding: 20px; /* Espacement intérieur de l'en-tête */
     text-align: center; /* Alignement du texte au centre */
 }
 
-/* Styles pour la section principale de la page */
+
 section {
     max-width: 800px; /* Largeur maximale de la section */
     margin: 20px auto; /* Marge extérieure automatique (centrage horizontal) */
     padding: 20px; /* Espacement intérieur de la section */
-    background-color: #fff; /* Couleur de fond de la section */
+    background-color: #fff; /
 }
 
 
@@ -28,7 +28,7 @@ section a i {
     color: blue; 
 }
 
-/* Styles pour les images */
+
 img {
     max-width: 100%; /* Image responsive, adaptée à la largeur du conteneur parent */
     height: auto; /* Hauteur automatique pour maintenir les proportions */
@@ -36,42 +36,38 @@ img {
     margin-bottom: 20px; /* Marge en bas des images */
 }
 
-/* Styles pour les titres de niveau 2 */
+
 h2 {
-    color: #3498db; /* Couleur du texte pour les titres de niveau 2 */
+    color: #3498db; 
 }
 
-/* Styles pour les paragraphes */
+
 p {
     line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
 }
 
-/* Styles pour les listes non ordonnées */
+
 ul {
     list-style-type: none; /* Suppression des puces des listes non ordonnées */
     padding: 0; /* Suppression du rembourrage par défaut des listes */
 }
 
-/* Styles pour les éléments de liste */
 ul li {
     margin-bottom: 10px; /* Marge en bas des éléments de liste */
 }
 
-/* Styles pour les liens */
 a {
     color: #3498db; /* Couleur du texte pour les liens */
     text-decoration: none; /* Pas de soulignement par défaut pour les liens */
 }
 
-/* Styles pour les liens au survol */
 a:hover {
     text-decoration: underline; /* Soulignement des liens au survol */
 }
 
-/* Styles pour le pied de page */
 footer {
-    background-color: #333; /* Couleur de fond du pied de page */
-    color: #fff; /* Couleur du texte du pied de page */
+    background-color: #333; 
+    color: #fff; 
     padding: 20px; /* Espacement intérieur du pied de page */
     text-align: center; /* Alignement du texte au centre */
     position: fixed; /* Position fixe en bas de la page */
@@ -79,14 +75,13 @@ footer {
     width: 100%; /* Largeur pleine de l'écran */
 }
 
-/* Styles pour les liens dans le pied de page */
+
 footer a {
-    color: #fff; /* Couleur du texte des liens du pied de page */
+    color: #fff; 
     text-decoration: none; /* Pas de soulignement par défaut pour les liens du pied de page */
     margin: 0 10px; /* Marge autour des liens du pied de page */
 }
 
-/* Styles spécifiques pour les écrans dont la largeur est inférieure à 680 pixels */
 @media screen and (max-width:680px){
     nav .onglets {
         margin-left: 0px; /* Ajustement de la marge à gauche pour les onglets de navigation */
